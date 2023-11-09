@@ -1,10 +1,10 @@
-html{
+html, body{
   margin: 0;
+  padding: 0;
 }
 
 body{
   background-color: #55bcc9;
-  margin: 0;
 }
 
 .main_img{
@@ -17,7 +17,6 @@ body{
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -25,33 +24,239 @@ body{
 
 .header{
   margin: 0;
-  margin-bottom: 500px;
-  background-color: #fc4445;
+  background-color: #FB5D51;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+nav{
+  z-index: 10;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a{
+  margin: 10px 20px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Mada', sans-serif;
+}
+
+nav a:last-child{
+  margin: 10px 40px 10px 20px;
+}
+
+.stretch{
+  position: relative;
+  padding: 10px;
+}
+
+.stretch::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+}
+
+.stretch:hover::after{
+  width: 100%;
+  transition-duration: .5s;
 }
 
 h1{
-  font-size: 60px;
+  font-size: 44px;
+  font-family: 'Mada', sans-serif;
+  color: #fff;
+  width: 100%;
+}
+
+h2{
+  font-size: 38px;
   font-family: 'Mada', sans-serif;
   color: #fff;
 }
 
-/*#f27d92 - оранжевый
-#558dca - темно-бирюзовый*/
+.main_section{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 160px;
+  margin: auto;
+  width: 100vw;
+}
 
-.projects_wrapper{
+.main_text_container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 100px;
+}
+
+.main_text{
+  color: #fff;
+  font-size: 26px;
+  line-height: 40px;
+  font-family: 'Mada', sans-serif;
+}
+
+.background_rectangle{
+  background-color: grey;
+  opacity: 0.5;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  padding: 0px 0px 80px 0px;
+}
+
+.background_rectangle_project{
+  background: linear-gradient(to bottom right, grey, #fff);
+  opacity: .2;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  padding: 0px 0px 80px 0px;
+}
+
+#language_btn{
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Mada', sans-serif;
+  margin-left: 20px;
+}
+
+#main_img{
+  width: 36%;
+  margin-left: 100px;
+}
+
+#link_contacts{
+  color: #013D61;
+  font-size: 30px;
+  font-family: 'Mada', sans-serif;
+  text-decoration-line: underline;
+  text-decoration-color: #FB5D51;
+  text-decoration-thickness: 10px;
+  text-underline-offset: 20px;
+  transition-duration: .2s;
+}
+
+#link_contacts:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+.skills_section, .projects_section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 60px 40px 80px 40px;
+}
+
+.tool_wrapper, .project_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Mada', sans-serif;
+}
+
+.tool_container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
-  width: auto;
+  margin: 50px 80px;
 }
 
-.project_item{
+
+.tool_container_text{
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Mada', sans-serif;
+  text-align: center;
+}
+
+.project_container{
   display: flex;
   justify-content: space-between;
-  border: 3px solid blue;
-  padding: 40px;
-  width: 80%;
-  height: 300px;
-  margin-bottom: 200px;
+  padding: 10px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.project_mockup{
+  width: 50%;
+  display: flex;
+  align-self: center;
+}
+
+.project_container_text{
+  color: #fff;
+  font-family: 'Mada', sans-serif;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project_text_name{
+  font-size: 30px;
+}
+
+.project_text_description{
+  font-size: 22px;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.github_btn, .netlify_btn{
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Mada', sans-serif;
+  margin: 20px;
+}
+
+.github_btn a, .netlify_btn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.netlify_arrow{
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  width: 250px;
 }
