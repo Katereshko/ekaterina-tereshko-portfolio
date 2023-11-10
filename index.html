@@ -15,7 +15,7 @@
 <body>
   <div id="particles-js"></div>
 
-  <div class="header">
+  <header>
     <div id="language_btn">RU</div>
     <nav>
       <a href="#about" class="stretch">About me</a>
@@ -23,94 +23,108 @@
       <a href="#projects" class="stretch">Projects</a>
       <a href="#contacts" class="stretch">Contact me</a>
     </nav>
-  </div>
+  </header>
 
-  <div class="main_section" id="about">
+  <section class="main" id="about">
     <div class="background_rectangle"></div>
     <img id="main_img" src="./assets/Girl_red.svg" width="600px">
     <div class="main_text_container">
       <h1>Hello, I'm Ekaterina!<br>I'm a frontend developer</h1>
       <div class="main_text">
         <p>
-          I'm passionate about creating valuable digital products which can educate, inform or entertain and make a difference in people's everyday lives. I enjoy both sides of the creating process - writing clean code and caring about design details and positive user experience.
+          I'm passionate about creating valuable digital products which can educate, inform or entertain and make a difference in people's everyday lives. I enjoy both sides of the creating process - writing clean code and caring about interactive design details and positive user experience. I love using flex and grid, but also enjoy creating PixelPerfect layouts!
         </p>
         <a id="link_contacts" href="#contacts">Get in touch</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="skills_section" id="skills">
+  <section class="skills" id="skills">
     <h2>Skills & Tools</h2>
     <div class="tool_wrapper">
-    <div class="tool_container">
-      <img src="./assets/icons/html5.svg" width="60px">
-      <p class="tool_container_text">HTML5</p>
+      <div class="tool_container">
+        <img src="./assets/icons/html5.svg" width="60px">
+        <p class="tool_container_text">HTML5</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/css3.svg" width="60px">
+        <p class="tool_container_text">CSS3</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/js.svg" width="60px">
+        <p class="tool_container_text">JavaScript</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/react.svg" width="60px">
+        <p class="tool_container_text">React</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/es6.svg" width="60px">
+        <p class="tool_container_text">ES6</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/git.svg" width="60px">
+        <p class="tool_container_text">Git</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/github.svg" width="60px">
+        <p class="tool_container_text">GitHub</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/responsive.svg" width="60px">
+        <p class="tool_container_text">Responsive <br>websites</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/adobe.svg" width="60px">
+        <p class="tool_container_text">Adobe tools</p>
+      </div>
+      <div class="tool_container">
+        <img src="./assets/icons/figma.svg" width="40px">
+        <p class="tool_container_text">Figma</p>
+      </div>
     </div>
-    <div class="tool_container">
-      <img src="./assets/icons/css3.svg" width="60px">
-      <p class="tool_container_text">CSS3</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/js.svg" width="60px">
-      <p class="tool_container_text">JavaScript</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/react.svg" width="60px">
-      <p class="tool_container_text">React</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/es6.svg" width="60px">
-      <p class="tool_container_text">ES6</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/git.svg" width="60px">
-      <p class="tool_container_text">Git</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/github.svg" width="60px">
-      <p class="tool_container_text">GitHub</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/responsive.svg" width="60px">
-      <p class="tool_container_text">Responsive <br>websites</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/adobe.svg" width="60px">
-      <p class="tool_container_text">Adobe tools</p>
-    </div>
-    <div class="tool_container">
-      <img src="./assets/icons/figma.svg" width="40px">
-      <p class="tool_container_text">Figma</p>
-    </div>
-    </div>
-    </div>
+  </section>
 
-  <div class="projects_section" id="projects">
+  <section class="projects" id="projects">
     <h2>Projects</h2>
     <div class="projects_wrapper">
-      <div class="project_container" id="game_with_computer">
+      <div class="project_container">
         <div class="background_rectangle_project"></div>
-        <img class="project_mockup" src="./assets/app_mockups/mockup_game_with_computer.jpg">
+        <img class="project_mockup" src="./assets/app_mockups/mockup_pomodoro_timer.jpg">
         <div class="project_container_text">
-          <h2 class="project_text_name">Game with computer</h2>
-          <p class="project_text_description">JavaScript-based game for entertaining or learning. Uses Math.random() method and functions to set a random number within a certain range of numbers that the user needs to guess. Provides two options: numbers from 1 to 20 or from 1 to 100.</p>
+          <h3 class="project_text_name">Pomodoro timer</h3>
+          <p class="project_text_description">JavaScript-based timer that will help you to concentrate on your working or studying process. Choose amount of time for work, then for rest and also amount of such rounds. Press "Start" button and use the convenient countdown on your screen. At the end of each round and also when the session is over the app will play appropriate sounds so that you do not miss them.</p>
+          <p class="project_text_description">To test the app, select the "test" option in each drop-down list.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/game-with-computer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Check on Netlify</a></div>
+            <div class="github_btn"><a href="https://github.com/Katereshko/pomodoro-timer">Check on GitHub</a></div>
+            <div class="netlify_btn"><a href="https://pomodoro-timer-for-studying.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
       </div>
-      <div class="project_container" id="game_with_computer">
+      <div class="project_container">
+        <div class="background_rectangle_project"></div>
+        <img class="project_mockup" src="./assets/app_mockups/mockup_know_your_income.jpg">
+        <div class="project_container_text">
+          <h3 class="project_text_name">Know Your Income</h3>
+          <p class="project_text_description">The app will help you to calculate your holiday payments. Fill in your monthly income or calculate the average income right there. Currently available in Russian language and for the Russian holiday payments system only.</p>
+          <div class="links">
+            <div class="github_btn"><a href="https://github.com/Katereshko/know-your-income">Check on GitHub</a></div>
+            <div class="netlify_btn"><a href="https://know-your-income.netlify.app/">Check on Netlify</a></div>
+            <img class="netlify_arrow" src="./assets/arrow.svg">
+          </div>
+        </div>
+      </div>
+      <div class="project_container">
         <div class="background_rectangle_project"></div>
         <img class="project_mockup" src="./assets/app_mockups/mockup_weather_app.jpg">
         <div class="project_container_text">
-          <h2 class="project_text_name">Weather App</h2>
+          <h3 class="project_text_name">Weather App</h3>
           <p class="project_text_description">JavaScript-based app that shows weather conditions in the user's city (or any other one).</p>
           <p class="project_text_description">Tools used:</p>
           <ul>
-          <li class="project_text_description">API servers provided by the websites https://abstractapi.com (for IP) and https://api.openweathermap.org (for weather data);</li>
-          <li class="project_text_description">The fetch() method which requests data from a server of the website that provides weather data. This method requires a parameter, the URL to request, and returns a promise.</li>
+            <li class="project_text_description">API servers provided by the websites https://abstractapi.com (for IP) and https://api.openweathermap.org (for weather data);</li>
+            <li class="project_text_description">The fetch() method which requests data from a server of the website that provides weather data. This method requires a parameter, the URL to request, and returns a promise.</li>
           </ul>
           <div class="links">
             <div class="github_btn"><a href="https://github.com/Katereshko/my-weather-app">Check on GitHub</a></div>
@@ -119,11 +133,24 @@
           </div>
         </div>
       </div>
-      <div class="project_container" id="Eggs Timer">
+      <div class="project_container">
+        <div class="background_rectangle_project"></div>
+        <img class="project_mockup" src="./assets/app_mockups/mockup_game_with_computer.jpg">
+        <div class="project_container_text">
+          <h3 class="project_text_name">Game with computer</h3>
+          <p class="project_text_description">JavaScript-based game for entertaining or learning. Uses Math.random() method and functions to set a random number within a certain range of numbers that the user needs to guess. Provides two options: numbers from 1 to 20 or from 1 to 100.</p>
+          <div class="links">
+            <div class="github_btn"><a href="https://github.com/Katereshko/game-with-computer">Check on GitHub</a></div>
+            <div class="netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Check on Netlify</a></div>
+            <img class="netlify_arrow" src="./assets/arrow.svg">
+          </div>
+        </div>
+      </div>
+      <div class="project_container">
         <div class="background_rectangle_project"></div>
         <img class="project_mockup" src="./assets/app_mockups/mockup_eggs_timer.jpg">
         <div class="project_container_text">
-          <h2 class="project_text_name">Eggs Timer</h2>
+          <h3 class="project_text_name">Eggs Timer</h3>
           <p class="project_text_description">JavaScript-based timer that sets a time countdown picked by user, shows the time remained and also illustrates the process with a progress bar and plays a sound when the countdown is over.</p>
           <div class="links">
             <div class="github_btn"><a href="https://github.com/Katereshko/my-eggs-timer">Check on GitHub</a></div>
@@ -132,12 +159,12 @@
           </div>
         </div>
       </div>
-      <div class="project_container" id="To Do List">
+      <div class="project_container">
         <div class="background_rectangle_project"></div>
         <img class="project_mockup" src="./assets/app_mockups/mockup_to_do_list.jpg">
         <div class="project_container_text">
-          <h2 class="project_text_name">To Do List</h2>
-          <p class="project_text_description">A simple Todo App built using React.</p>
+          <h3 class="project_text_name">To Do List</h3>
+          <p class="project_text_description">A simple todo app built using React.</p>
           <p class="project_text_description">Created using class components in order to receive a clearer understanding of class components before turning to the in-depth study of functional components.</p>
           <div class="links">
             <div class="github_btn"><a href="https://github.com/Katereshko/my-react-to-do-list">Check on GitHub</a></div>
@@ -147,15 +174,36 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="contacts_wrapper" id="contacts">
-    <p>my contacts here</p>
-    <p>and maybe a form</p>
-  </div>
+  <footer>
+    <section class="contacts" id="contacts">
+      <h2>Contact me</h2>
+      <div class="contacts_text">
+        <p>Mobile phone number: +7(901)507-48-72</p>
+        <p>E-mail: ekaterina.tereshko.me@gmail.com</p>
+      </div>
+      
+      <form class="contacts_form" action="https://formspree.io/f/mgejqgvw" method="POST">
+        <input type="hidden" name="_language" value="en"/>
+        <label>
+          Your email:
+          <input class="input_field" type="email" required name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea class="input_field input_field_text" required name="message"></textarea>
+        </label>
+        <button id="btn_submit" type="submit">Send</button>
+      </form>
+      <div id="copyright">
+        <p>©   2023 Ekaterina Tereshko</p>
+        <p>©   Е. И. Терешко, 2023</p>
+      </div>
+    </section>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-featured_projects section
