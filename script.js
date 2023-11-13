@@ -114,5 +114,5 @@ menuBtn.addEventListener('click', function(){
     menu.classList.toggle('active');
 });
 
-gsap.to("#game_arrow", {duration: 1.2, y:-40, ease:"none", repeat:-1, yoyo:true})
+gsap.to("#game_arrow", {duration: 1, y:-50, ease:"none", repeat:-1, yoyo:true})
 
