@@ -7,7 +7,7 @@
   <link href="style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mada&family=Shantell+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <link rel=“icon” href=”favicon.ico” type=“image/x-icon”>
   <link rel=“shortcut icon” href=“favicon.ico” type=“image/x-icon”>
@@ -16,7 +16,18 @@
   <div id="particles-js"></div>
 
   <header>
-    <div id="language_btn"><a href="main_rus.html">RU</a></div>
+    <div class="btn" id="language_btn"><a href="main_rus.html">RU</a></div>
+    <div class="main_menu_nav">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills & Tools</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contact me</a>
+    </div>
+    <div class="main_menu_hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <a href="#about" class="stretch">About me</a>
       <a href="#skills" class="stretch">Skills & Tools</a>
@@ -96,8 +107,8 @@
           <p class="project_text_description">JavaScript-based timer that will help you to concentrate on your working or studying process. Choose amount of time for work, then for rest and also amount of such rounds. Press "Start" button and use the convenient countdown on your screen. At the end of each round and also when the session is over the app will play appropriate sounds so that you do not miss them.</p>
           <p class="project_text_description">To test the app, select the "test" option in each drop-down list.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/pomodoro-timer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://pomodoro-timer-for-studying.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/pomodoro-timer">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://pomodoro-timer-for-studying.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -109,8 +120,8 @@
           <h3 class="project_text_name">Know Your Income</h3>
           <p class="project_text_description">The app will help you to calculate your holiday payments. Fill in your monthly income or calculate the average income right there. Currently available in Russian language and for the Russian holiday payments system only.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/know-your-income">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://know-your-income.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/know-your-income">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://know-your-income.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -127,8 +138,8 @@
             <li class="project_text_description">The fetch() method which requests data from a server of the website that provides weather data. This method requires a parameter, the URL to request, and returns a promise.</li>
           </ul>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-weather-app">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://my-weather-app-104.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/my-weather-app">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://my-weather-app-104.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -140,8 +151,8 @@
           <h3 class="project_text_name">Game with computer</h3>
           <p class="project_text_description">JavaScript-based game for entertaining or learning. Uses Math.random() method and functions to set a random number within a certain range of numbers that the user needs to guess. Provides two options: numbers from 1 to 20 or from 1 to 100.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/game-with-computer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/game-with-computer">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -153,8 +164,8 @@
           <h3 class="project_text_name">Eggs Timer</h3>
           <p class="project_text_description">JavaScript-based timer that sets a time countdown picked by user, shows the time remained and also illustrates the process with a progress bar and plays a sound when the countdown is over.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-eggs-timer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://my-eggs-timer.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/my-eggs-timer">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://my-eggs-timer.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -167,8 +178,8 @@
           <p class="project_text_description">A simple todo app built using React.</p>
           <p class="project_text_description">Created using class components in order to receive a clearer understanding of class components before turning to the in-depth study of functional components.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-react-to-do-list">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://katereshko-react-to-do-list.netlify.app/">Check on Netlify</a></div>
+            <div class="btn github_btn"><a href="https://github.com/Katereshko/my-react-to-do-list">Check on GitHub</a></div>
+            <div class="btn netlify_btn"><a href="https://katereshko-react-to-do-list.netlify.app/">Check on Netlify</a></div>
             <img class="netlify_arrow" src="./assets/arrow.svg">
           </div>
         </div>
@@ -194,7 +205,7 @@
           Your message:
           <textarea class="input_field input_field_text" required name="message"></textarea>
         </label>
-        <button id="btn_submit" type="submit">Send</button>
+        <button class="btn" id="btn_submit" type="submit">Send</button>
       </form>
       <div id="copyright">
         <p>©   2023 Ekaterina Tereshko</p>

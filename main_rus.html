@@ -7,7 +7,7 @@
   <link href="style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mada&family=Shantell+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <link rel=“icon” href=”favicon.ico” type=“image/x-icon”>
   <link rel=“shortcut icon” href=“favicon.ico” type=“image/x-icon”>
@@ -16,7 +16,19 @@
   <div id="particles-js"></div>
 
   <header>
-    <div id="language_btn"><a href="index.html">EN</a></div>
+    <div class="btn" id="language_btn"><a href="index.html">EN</a></div>
+    <div class="main_menu_nav">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills & Tools</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contact me</a>
+    </div>
+    <div class="main_menu_hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
     <nav>
       <a href="#about" class="stretch">Обо мне</a>
       <a href="#skills" class="stretch">Технологии</a>
@@ -32,7 +44,7 @@
       <h1>Я Екатерина,<br>фронтенд-разработчик</h1>
       <div class="main_text">
         <p>
-          Я люблю все аспекты фронтенд-разработки: написание чистого кода, работу с логическими задачами, внимание к деталям дизайна и интерактивности, а также заботу о положительном пользовательском опыте. В верстке я обычно использую flex и grid, но я также с удовольствием создаю точную разметку с использованием PixelPerfect. В настоящий момент изучаю React и Node.
+          Я люблю все аспекты фронтенд-разработки: написание чистого кода, работу с логическими задачами, работу над деталями дизайна и интерактивностью, а также заботу о пользовательском опыте. В верстке я обычно использую flex и grid, но я также с удовольствием создаю точную разметку с использованием PixelPerfect. В настоящий момент изучаю React и Node.
         </p>
         <a id="link_contacts" href="#contacts">Написать мне</a>
       </div>
@@ -93,12 +105,12 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_pomodoro_timer.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Pomodoro таймер</h3>
-          <p class="project_text_description">JavaScript-based timer that will help you to concentrate on your working or studying process. Choose amount of time for work, then for rest and also amount of such rounds. Press "Start" button and use the convenient countdown on your screen. At the end of each round and also when the session is over the app will play appropriate sounds so that you do not miss them.</p>
-          <p class="project_text_description">To test the app, select the "test" option in each drop-down list.</p>
+          <p class="project_text_description">Таймер, основанный на JavaScript. Приложение поможет сконцентрироваться на работе или учёбе: выберите сами количество времени дял работы, для отдыха, а также количество таких раундов. Нажмите кнопку "Start", чтобы запустить таймер. За 10 секунд до конца каждого раунда таймер оповестит вас при помощи звукового сигнала. В конце сессии таймер также издаст звуковой сигнал.</p>
+          <p class="project_text_description">Чтобы протестировать приложение, выберите опцию "test" в каждом поле и запустите сессию.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/pomodoro-timer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://pomodoro-timer-for-studying.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/pomodoro-timer">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://pomodoro-timer-for-studying.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -107,11 +119,11 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_know_your_income.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Калькулятор отпускных выплат</h3>
-          <p class="project_text_description">The app will help you to calculate your holiday payments. Fill in your monthly income or calculate the average income right there. Currently available in Russian language and for the Russian holiday payments system only.</p>
+          <p class="project_text_description"> Приложение поможет рассчитать отпускные выплаты, если вы работаете в российской компании и собираетесь в отпуск. Введите ваш среднемесячный доход и количество дней отпуска. Также вы можете рассчитать среднемесячный доход прямо в приложении, если ваш доход был разным в течение последних 12 месяцев.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/know-your-income">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://know-your-income.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/know-your-income">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://know-your-income.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -120,16 +132,16 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_weather_app.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Прогноз погоды</h3>
-          <p class="project_text_description">JavaScript-based app that shows weather conditions in the user's city (or any other one).</p>
-          <p class="project_text_description">Tools used:</p>
+          <p class="project_text_description">Приложение, основанное на JavaScript, показывающее погоду в городе пользователя (или любом другом).</p>
+          <p class="project_text_description">Используемые инструменты:</p>
           <ul>
-            <li class="project_text_description">API servers provided by the websites https://abstractapi.com (for IP) and https://api.openweathermap.org (for weather data);</li>
-            <li class="project_text_description">The fetch() method which requests data from a server of the website that provides weather data. This method requires a parameter, the URL to request, and returns a promise.</li>
+            <li class="project_text_description">API серверы, предоставленные веб-ресурсами https://abstractapi.com (для IP) и https://api.openweathermap.org (для погодных данных);</li>
+            <li class="project_text_description">Метод fetch(), который запрашивает данные с сервера, их предоставляющего. Для запроса метод использует параметр (URL) и возвращает promise.</li>
           </ul>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-weather-app">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://my-weather-app-104.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/my-weather-app">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://my-weather-app-104.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -138,11 +150,11 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_game_with_computer.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Игра с компьютером</h3>
-          <p class="project_text_description">JavaScript-based game for entertaining or learning. Uses Math.random() method and functions to set a random number within a certain range of numbers that the user needs to guess. Provides two options: numbers from 1 to 20 or from 1 to 100.</p>
+          <p class="project_text_description">Игра, основанная на JavaScript, предназначенная для развлечения или обучения. Использует метод Math.random() и функции для генерации случайного числа в определенном диапазоне, выбранном пользователем. Пользователю необходимо угадать число, выбранное "компьютером", используя подсказки (alerts). Игра оканчивается, когда число угадано.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/game-with-computer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/game-with-computer">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://game-with-computer-1-100.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -151,11 +163,11 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_eggs_timer.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Таймер для варки яиц</h3>
-          <p class="project_text_description">JavaScript-based timer that sets a time countdown picked by user, shows the time remained and also illustrates the process with a progress bar and plays a sound when the countdown is over.</p>
+          <p class="project_text_description">Таймер, основанный на JavaScript. Устанавливает время, выбранное пользователем, показывает оставшееся время на экране, ежесекундно его обновляя, а также иллюстрирует процесс при помощи шкалы прогресса и проигрывает звуковой сигнал по окончании работы таймера. </p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-eggs-timer">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://my-eggs-timer.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/my-eggs-timer">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://my-eggs-timer.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -164,12 +176,12 @@
         <img class="project_mockup" src="./assets/app_mockups/mockup_to_do_list.jpg">
         <div class="project_container_text">
           <h3 class="project_text_name">Список дел</h3>
-          <p class="project_text_description">A simple todo app built using React.</p>
-          <p class="project_text_description">Created using class components in order to receive a clearer understanding of class components before turning to the in-depth study of functional components.</p>
+          <p class="project_text_description">Простой список дел, основанный на React.</p>
+          <p class="project_text_description">Создан с использованием классовых компонентов с целью получения уверенного понимания принципов работы классовых компонентов перед углубленным изучением функциональных компонентов.</p>
           <div class="links">
-            <div class="github_btn"><a href="https://github.com/Katereshko/my-react-to-do-list">Check on GitHub</a></div>
-            <div class="netlify_btn"><a href="https://katereshko-react-to-do-list.netlify.app/">Check on Netlify</a></div>
-            <img class="netlify_arrow" src="./assets/arrow.svg">
+            <div class="btn rus_github_btn"><a href="https://github.com/Katereshko/my-react-to-do-list">Открыть на GitHub</a></div>
+            <div class="btn rus_netlify_btn"><a href="https://katereshko-react-to-do-list.netlify.app/">Открыть приложение</a></div>
+            <img class="netlify_arrow" src="./assets/arrow_rus.svg">
           </div>
         </div>
       </div>
@@ -184,8 +196,8 @@
         <p>E-mail: ekaterina.tereshko.me@gmail.com</p>
       </div>
       
-      <form class="contacts_form" action="https://formspree.io/f/mgejqgvw" method="POST">
-        <input type="hidden" name="_language" value="en"/>
+      <form class="contacts_form" action="https://formspree.io/f/mrgwvgyk" method="POST">
+        <input type="hidden" name="_language" value="ru"/>
         <label>
           Ваш e-mail:
           <input class="input_field" type="email" required name="email">
@@ -194,7 +206,7 @@
           Ваше сообщение:
           <textarea class="input_field input_field_text" required name="message"></textarea>
         </label>
-        <button id="btn_submit" type="submit">Отправить</button>
+        <button class="btn" id="btn_submit" type="submit">Отправить</button>
       </form>
       <div id="copyright">
         <p>©   2023 Ekaterina Tereshko</p>

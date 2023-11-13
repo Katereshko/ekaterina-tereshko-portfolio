@@ -106,3 +106,11 @@ particlesJS("particles-js",
             },
             "retina_detect": true
     });
+
+let menuBtn = document.querySelector('.main_menu_hamburger');
+let menu = document.querySelector('.main_menu_nav');
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+})
+
